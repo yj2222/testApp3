@@ -1,46 +1,121 @@
 .mainBackGround{
-    background-image: url(../image/mainBack.jpg);
+    /* background-color: aqua; */
+    background: linear-gradient(25deg, aqua, yellow);
     height: 100vh;
 }
 
-.mainInner{
-    background-color: rgba(0, 0, 0, 0.418);
-    height: 100%;
-}
 
-.mainFrom{
+
+
+.mainContainer__title{
     width: 600px;
     margin: 0 auto;
-    padding-top: 100px;
+    font-family: "Nikukyu"; 
+    height: 220px;
+    font-size: 50px;
+    color: red;
     position: relative;
 }
 
-.imgMajin{
-    width: 200px;
-}
-
-.imgBallon{
-    width: 200px;
+.char1 { 
+    transform: rotate(-40deg);
     position: absolute;
-    top: 50px;;
+    top: 100px;
 }
 
-.mainForm__left__btn{
-    width: 150px;
-    height: 50px;
-    background-color: pink;
-    font-size: 30px;
-    color: white;
-    border-radius: 20px;
+.char2 { 
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+.char3 { 
+    transform: rotate(10deg);
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+.char4 { 
+    transform: rotate(40deg);
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.char5 { 
+    transform: rotate(40deg);
     position: absolute;
     top: 120px;
-    left: 230px;
+    left: 180px;
+    font-weight: bold;
+
 }
 
-.imgHuman{
+.char6 { 
+    transform: rotate(10deg);
+    position: absolute;
+    top: 140px;
+    left: 220px;
+
+}
+
+.char7 { 
+    font-weight: bold;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 160px;
+    left: 260px;
+}
+
+.char8 { 
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 140px;
+    left: 300px;
+}
+
+.char9 { 
+    transform: rotate(-40deg);
+    position: absolute;
+    top: 120px;
+    left: 350px;
+}
+
+.char10 {
+    font-weight: bold;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 110px;
+    left: 410px;
+}
+
+.char11 { 
+    transform: rotate(10deg);
+    position: absolute;
+    top: 100px;
+    left: 470px;
+}
+
+.char12 { 
+    font-weight: bold;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 130px;
+    left: 505px;
+}
+
+.mainContainer__contents{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.imageMajin{
     width: 200px;
 }
 
-.mainForm__right{
-    text-align: right;
+.mainContainer__contents__discription--text{
+    color: gray;
+    font-weight: bold;
 }
