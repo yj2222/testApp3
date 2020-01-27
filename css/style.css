@@ -1,0 +1,46 @@
+.mainBackGround{
+    background-image: url(../image/mainBack.jpg);
+    height: 100vh;
+}
+
+.mainInner{
+    background-color: rgba(0, 0, 0, 0.418);
+    height: 100%;
+}
+
+.mainFrom{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+
+.imgMajin{
+    width: 200px;
+}
+
+.imgBallon{
+    width: 200px;
+    position: absolute;
+    top: 50px;;
+}
+
+.mainForm__left__btn{
+    width: 150px;
+    height: 50px;
+    background-color: pink;
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 120px;
+    left: 230px;
+}
+
+.imgHuman{
+    width: 200px;
+}
+
+.mainForm__right{
+    text-align: right;
+}
