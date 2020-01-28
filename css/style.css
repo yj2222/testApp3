@@ -1,23 +1,39 @@
+/* .body{
+    width: 100vh;
+} */
+
 .mainBackGround{
-    /* background-color: aqua; */
-    background: linear-gradient(25deg, aqua, yellow);
-    height: 100vh;
+    /* width: 100vw; */
+    background: linear-gradient(25deg, blue,aqua,white);
 }
 
 
 
 
 .mainContainer__title{
-    width: 600px;
+    text-align: center;
     margin: 0 auto;
     font-family: "Nikukyu"; 
-    height: 220px;
+    padding-top: 50px;
     font-size: 50px;
     color: red;
     position: relative;
 }
 
-.char1 { 
+@media screen and (max-width:899px) { 
+    .mainContainer__title--image{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:900px) { 
+    .mainContainer__title--image{
+        width: 600px;
+    }
+}
+
+
+/* .char1 { 
     transform: rotate(-40deg);
     position: absolute;
     top: 100px;
@@ -66,36 +82,36 @@
     transform: rotate(-10deg);
     position: absolute;
     top: 160px;
-    left: 260px;
+    left: 250px;
 }
 
 .char8 { 
     transform: rotate(-10deg);
     position: absolute;
     top: 140px;
-    left: 300px;
+    left: 280px;
 }
 
 .char9 { 
     transform: rotate(-40deg);
     position: absolute;
     top: 120px;
-    left: 350px;
+    left: 330px;
 }
 
 .char10 {
     font-weight: bold;
     transform: rotate(-10deg);
     position: absolute;
-    top: 110px;
-    left: 410px;
+    top: 100px;
+    left: 390px;
 }
 
 .char11 { 
     transform: rotate(10deg);
     position: absolute;
     top: 100px;
-    left: 470px;
+    left: 450px;
 }
 
 .char12 { 
@@ -103,8 +119,8 @@
     transform: rotate(40deg);
     position: absolute;
     top: 130px;
-    left: 505px;
-}
+    left: 480px;
+} */
 
 .mainContainer__contents{
     max-width: 600px;
@@ -113,9 +129,139 @@
 
 .imageMajin{
     width: 200px;
+    padding-right: 30px;
+}
+
+.swing{
+  animation-name: anime;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  transform : translateY(-20px);
+  color: red;
+}
+
+@keyframes anime{
+  from{ transform : translateY(-20px); }
+  50%{ transform : translateY(40px); }
+  to{ transform : translateY(-20px); }
+}
+
+@media screen and (min-width:480px) { 
+    .mainContainer__contents__discription{
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .mainContainer__contents__discription--text{
     color: gray;
     font-weight: bold;
+}
+
+/* 吹き出し本体 */
+.balloon{
+    margin: 0 20px;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    height: 100%;
+}
+
+@media screen and (max-width:479px) { 
+    /* 大きい丸 */
+    .balloon::before{
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        background-color: white;
+        left: 200px;
+        bottom: -40px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* 小さい丸 */
+    .balloon::after{
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        background-color: white;
+        left: 180px;
+        bottom: -55px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (min-width:480px) { 
+    /* 大きい丸 */
+    .balloon::before{
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        background-color: white;
+        left: 40px;
+        bottom: -40px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* 小さい丸 */
+    .balloon::after{
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        background-color: white;
+        left: 25px;
+        bottom: -55px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+.mainContainer__contents{
+    padding-top: 50px;
+}
+
+.mainContainer__contents__btn{
+    text-align: right;
+    padding: 0 50px 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainContainer__contents__btn--text{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.mainContainer__contents__btnStart{
+    font-family: "Nikukyu"; 
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 111, 135);
+    color: white;
+    font-size: 40px;
+    border-radius: 100px;
+}
+
+.footerText{
+    height: 60px;
+    background-color: rgb(160, 13, 13);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    line-height: 60px;
 }
