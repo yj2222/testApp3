@@ -235,26 +235,60 @@
 
 .mainContainer__contents__btn{
     text-align: right;
-    padding: 0 50px 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: flex-end;
 }
 
 .mainContainer__contents__btn--text{
-    font-size: 30px;
     color: white;
     font-weight: bold;
     padding-right: 30px;
+    line-height: 100px;
+    font-size: 100px;
+    animation: moveSide 3s ease infinite;
 }
+
+.fa-hand-point-right{
+    transform: rotate(10deg);
+}
+
+@keyframes moveSide {
+    0% { transform:translateX(0) }
+    5% { transform:translateX(0) }
+    10% { transform:translateX(0) }
+    20% { transform:translateX(-5px) }
+    25% { transform:translateX(0) }
+    30% { transform:translateX(-10px) }
+    50% { transform:translateX(0) }
+    100% { transform:translateX(0) }
+}
+
 
 .mainContainer__contents__btnStart{
     font-family: "Nikukyu"; 
+    margin-right: 50px;
     height: 200px;
     width: 200px;
-    background-color: rgb(255, 111, 135);
+    background-color: rgb(250, 110, 130);
     color: white;
     font-size: 40px;
     border-radius: 100px;
+    transition: 0.3s;
+}
+
+.mainContainer__contents__btnStart:hover{
+    background-color: rgb(250, 170, 180);
+}
+
+@media screen and (max-width:479px) { 
+    .mainContainer__contents__btnStart{
+        margin-right: 20px;
+        height: 120px;
+        width: 120px;
+        font-size: 20px;
+        border-radius: 60px;
+    }
 }
 
 .footerText{
