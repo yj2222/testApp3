@@ -1,4 +1,7 @@
 $(function(){
-    console.log("OK")
-    
+    console.log("読み込みOK")
+    $('#startContentBtn').click(function() {
+        console.log('クリックされました！');
+        $('#startContentBtn').hide();
+    })
 });
